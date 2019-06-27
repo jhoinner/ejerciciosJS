@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pagina usando javascript</h1>
+
+    <script>
+      var peso =  parseFloat(window.prompt("digite su peso"));
+      var altura = parseFloat(window.prompt("digite su altura"));
+      var imc = peso/Math.pow(altura,2);
+      window.prompt(imc);
+      if(imc<16){
+          window.prompt(imc+"Infrapeso: Delgadez Severa");
+      }
+      if(imc>=16 && imc<=16.99){
+          window.prompt(imc+"Infrapeso: Delgadez moderada");
+      }
+      if(imc>=17 && imc<=18.49){
+          window.prompt(imc+"Infrapeso: Delgadez aceptable");
+      }
+      if(imc>=18.50 && imc<=24.99){
+          window.prompt(imc+"Peso Normal");
+      }
+      if(imc>=25 && imc<=29.99){
+          window.prompt(imc+"Sobrepeso");
+      }
+      if(imc>=30 && imc<=34.99){
+          window.prompt(imc+"Obeso: Tipo I");
+      }
+      if(imc>=35 && imc<=40){
+          window.prompt(imc+"Obeso: Tipo II");
+      }
+      if(imc>40){
+          window.prompt(imc+"Obeso: Tipo III");
+      }
+    </script>
+    
+</body>
+</html>
